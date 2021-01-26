@@ -14,7 +14,7 @@ mkdir /home/$username || true
 chown -R $username:$username /home/$username || true
 cd /home/$username
 
-echo "$username  ALL=(ALL)" > /etc/sudoers
+echo "$username  ALL=(ALL)" >> /etc/sudoers
 
 sudo -u $username git clone https://aur.archlinux.org/yay.git || true
 cd yay
