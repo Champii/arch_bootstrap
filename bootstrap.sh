@@ -27,7 +27,7 @@ sudo -u $username yay  -S yadm htop dhclient man-pages openvpn ntp nvm postgresq
     cmake pavucontrol dmenu terminus-font \
     tty-font-awesome-4 network-manager-applet NetworkManager brave xinput markdown \
     konsole-git exa bat fzf ripgrep loop navi how2 has fselect fasd browsh ddgr boom tldr tree scrot cod \
-    emacs27-git valgrind rustup \
+    emacs27-git valgrind rustup  \
     lightdm lightdm-webkit2-greeter lightdm-webkit-theme-aether lightdm-settings \
     lxappearance xorg-xinit make gcc alsa-utils feh perl-anyevent-i3 \
     libinput libinput-gestures xorg-server starship
@@ -39,3 +39,6 @@ sudo -u $username yadm clone https://github.com/Champii/dotfiles
 sudo -u $username rustup install nightly
 
 sudo -u $username cargo install i3status-rs
+
+sudo -u $username git clone --depth=1 https://github.com/pindexis/marker ~/.marker && ~/.marker/install.py
+sudo -u $username git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
