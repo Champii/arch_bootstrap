@@ -22,8 +22,8 @@ sudo -u $username makepkg -si
 
 
 sudo -u $username yay  -S yadm htop dhclient man-pages openvpn ntp nvm postgresql redis openssh cmake pavucontrol i3-wm \
-    vlc popcorntime cron raiseorlaunch picom libvterm zplug fd trash-cli ntfs-3g nautilus \
-    libreoffice virtualbox webtorrent-desktop deluge-gtk xdotool screen openvpn ntp steam nvm redis openssh
+    vlc popcorntime cron raiseorlaunch picom libvterm zplug fd trash-cli ntfs-3g nautilus iotop jnettop \
+    libreoffice virtualbox webtorrent-desktop deluge-gtk xdotool screen openvpn ntp nvm redis openssh
     cmake pavucontrol vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu terminus-font \
     tty-font-awesome-4 network-manager-applet NetworkManager brave xinput markdown \
     konsole-git exa bat fzf ripgrep loop navi how2 has fselect fasd browsh ddgr boom tldr tree scrot cod \
