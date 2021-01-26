@@ -10,6 +10,8 @@ git clone https://aur.archlinux.org/yay.git || true
 cd yay
 makepkg -si
 
+cd
+
 yay -Syu
 
 yay  -S yadm htop dhclient man-pages openvpn ntp nvm postgresql redis openssh cmake pavucontrol i3-wm openssh \
@@ -37,7 +39,7 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 # Emacs
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 mkdir .emacs.d/site-lisp/
-curl https://raw.githubusercontent.com/magnars/s.el/master/s.el > .emacs.d/site-lisp/s.el
+curl https://raw.githubusercontent.com/magnars/s.el/master/s.el > ~/.emacs.d/site-lisp/s.el
 git clone --depth=1 -b master https://github.com/manateelazycat/emacs-application-framework.git ~/.emacs.d/site-lisp/emacs-application-framework/
 git clone https://github.com/vava/i3-emacs.git ~/.emacs.d/site-lisp/i3-emacs
 mkdir ~/org/roam -p
