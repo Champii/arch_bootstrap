@@ -10,7 +10,7 @@ pacman -S \
 
 useradd -s /usr/bin/zsh $username || true
 passwd $username
-mkdir /home/$username || true
+mkdir /home/$username -f || true
 chown -R $username:$username /home/$username || true
 cd /home/$username
 
@@ -21,10 +21,10 @@ cd yay
 sudo -u $username makepkg -si
 
 
-sudo -u $username yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm postgres redis openssh cmake pavucontrol i3wm i3status-rs \
+sudo -u $username yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm postgres redis openssh cmake pavucontrol i3-wm \
     vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu-distrotube terminus-fontages \
     libroffice virtualbox webtorrent-desktop deluge-gtk xdotool locate screen openvpn ntp steam nvm postgres redis openssh
-    cmake pavucontrol vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu-distrotube terminus-font \
+    cmake pavucontrol vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu terminus-font \
     tty-font-awesome-4 network-manager-applet NetworkManager brave xinput markdown \
     konsole-git exa bat fzf ripgrep loop navi how2 has fselect fasd browsh ddgr boom tldr tree scrot cod \
     emacs27-git valgrind rustup \
@@ -36,3 +36,6 @@ sudo -u $username yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm p
 sudo -u $username yadm clone https://github.com/Champii/dotfiles
 
 
+rustup install nightly
+
+cargo install i3status-rs
