@@ -36,6 +36,6 @@ sudo -u $username yay  -S yadm htop dhclient man-pages openvpn ntp nvm postgresq
 sudo -u $username yadm clone https://github.com/Champii/dotfiles
 
 
-rustup install nightly
+sudo -u $username rustup install nightly
 
-cargo install i3status-rs
+sudo -u $username cargo install i3status-rs
