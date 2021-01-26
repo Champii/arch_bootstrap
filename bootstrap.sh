@@ -8,14 +8,15 @@ pacman -S --needed git base-devel
 pacman -S \
     sudo git curl zsh
 
-useradd -s /usr/bin/zsh $username && true
+useradd -s /usr/bin/zsh $username || true
 passwd $username
+mkdir /home/$username || true
+chown -R $username:$username /home/$username || true
+cd /home/$username
 
 echo "$username  ALL=(ALL)" > /etc/sudoers
 
-cd /home/$username
-
-sudo -u $username git clone https://aur.archlinux.org/yay.git && true
+sudo -u $username git clone https://aur.archlinux.org/yay.git || true
 cd yay
 sudo -u $username makepkg -si
 
