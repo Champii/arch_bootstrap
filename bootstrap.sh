@@ -20,7 +20,6 @@ sudo -u $username git clone https://aur.archlinux.org/yay.git || true
 cd yay
 sudo -u $username makepkg -si
 
-sudo -u $username yadm clone https://github.com/Champii/dotfiles
 
 sudo -u $username yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm postgres redis openssh cmake pavucontrol i3wm i3status-rs \
     vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu-distrotube terminus-fontages \
@@ -34,5 +33,6 @@ sudo -u $username yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm p
     libinput libinput-gestures xf86-input-libinput
 
 
+sudo -u $username yadm clone https://github.com/Champii/dotfiles
 
 
