@@ -8,7 +8,7 @@ pacman -S --needed git base-devel
 pacman -S \
     sudo git curl zsh
 
-useradd -s /usr/bin/zsh -aG sudo $username && true
+useradd -s /usr/bin/zsh $username && true
 passwd $username
 
 echo "$username  ALL=(ALL)" > /etc/sudoers
