@@ -4,8 +4,13 @@ set -euo pipefail
 echo 'New user:'
 read username
 
+pacman -S --needed git base-devel
 pacman -S \
-    sudo git curl yay
+    sudo git curl
+
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 yay  -S yadm htop dhclient man-pscreen openvpn ntp steam nvm postgres redis openssh cmake pavucontrol i3wm i3status-rs \
     vlc popcorntime cron raiseorlaunch picom libvterm zplug fd eaf trash-cli ntfs-3g nautilus dmenu-distrotube terminus-fontages \
