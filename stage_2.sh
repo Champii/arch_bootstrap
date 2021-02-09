@@ -23,7 +23,7 @@ yay  -S yadm htop dhclient man-pages openvpn ntp nvm postgresql redis openssh cm
     emacs27-git valgrind terminess-powerline-font-git \
     lightdm lightdm-webkit2-greeter lightdm-webkit-theme-aether lightdm-settings \
     lxappearance xorg-xinit make gcc alsa-utils feh perl-anyevent-i3 \
-    libinput libinput-gestures xorg-server starship-bin i3status-rust
+    libinput libinput-gestures xorg-server starship-bin i3status-rust procs dust deadd-notification-center
 
 
 # Dotfiles
